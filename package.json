@@ -1,0 +1,22 @@
+{
+  "name": "jenkins",
+  "version": "1.0.0",
+  "description": "jenkins api gateway",
+  "main": "jenkins.js",
+  "scripts": {
+    "start": "babel-node lib/jenkins.js --presets es2015,stage-2",
+    "build": "babel lib -d dist",
+    "serve": "node --debug dist/jenkins.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0"
+  },
+  "dependencies": {
+    "node-fetch": "^1.6.3",
+    "prettyjson": "^1.1.3"
+  }
+}
